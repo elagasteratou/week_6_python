@@ -1,4 +1,5 @@
 from person import Profile
+import random
 
 
 class Employee(Profile):
@@ -6,8 +7,13 @@ class Employee(Profile):
         self.__employee_id = employee_id
         super().__init__(lastname, firstname, age)
 
-    def inputemployee_id(self, employee_id):
-        self.__employee_id = employee_id
+    def generate_employee_id(self, firstname, lastname):
+        self.__employee_id = [firstname[0], lastname[0]]
+
+        while len(self.__employee_id) < 8:
+            number = random.randint(0, 9)
+            self.__employee_id.append(str(number))
+        str(self.__employee_id)
 
     def get_employee_profile(self):
         # tried to use super to call get profile

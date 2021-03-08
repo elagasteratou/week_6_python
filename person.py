@@ -5,10 +5,10 @@ class Profile:
         self._age = age
 
     def inputfirstname(self, firstname):
-        self._firstname += firstname
+        self._firstname += firstname.capitalize()
 
     def inputlastname(self, lastname):
-        self._lastname += lastname
+        self._lastname += lastname.capitalize()
 
     def inputage(self, age):
         self._age = int(age)
