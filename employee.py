@@ -13,7 +13,7 @@ class Employee(Profile):
         while len(self.__employee_id) < 8:
             number = random.randint(0, 9)
             self.__employee_id.append(str(number))
-        str(self.__employee_id)
+        return self.__employee_id
 
     def get_employee_profile(self):
         # tried to use super to call get profile

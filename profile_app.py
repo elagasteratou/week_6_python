@@ -24,26 +24,26 @@ def get_employee_details():
     print(employee_profile_details)
 
 
-def get_customer_details():
+def get_person_details():
     firstname = input("Please input your first name:")
     lastname = input("Please input your last name:")
     age = input("Please input your age:")
 
-    customer_profile = Profile(firstname="", lastname="", age=0)
+    person_profile = Profile(firstname="", lastname="", age=0)
 
-    customer_profile.inputfirstname(firstname)
-    customer_profile.inputlastname(lastname)
-    customer_profile.inputage(age)
+    person_profile.inputfirstname(firstname)
+    person_profile.inputlastname(lastname)
+    person_profile.inputage(age)
 
-    customer_profile_details = customer_profile.getprofile()
+    person_profile_details = person_profile.getprofile()
 
-    print(f"\n{customer_profile_details}")
+    print(f"\n{person_profile_details}")
 
 
 print("\nEmployee profiles\n")
 get_employee_details()
 
-print("\nCustomer profiles\n")
-# get_customer_details()
+print("\nPerson profile\n")
+# get_person_details()
 
 # print("\nPerson profiles\n")
