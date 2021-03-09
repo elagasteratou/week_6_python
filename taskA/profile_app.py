@@ -1,5 +1,6 @@
 from person import Profile
 from employee import Employee
+from customer import Customer
 
 
 # employee profiles
@@ -40,10 +41,32 @@ def get_person_details():
     print(f"\n{person_profile_details}")
 
 
+def get_customer_details():
+    firstname = input("Please input your first name:")
+    lastname = input("Please input your last name:")
+    age = input("Please input your age:")
+
+    customer_profile = Customer(firstname="", lastname="", age=0, customer_id = [])
+
+    customer_profile.inputfirstname(firstname)
+    customer_profile.inputlastname(lastname)
+    customer_profile.inputage(age)
+    customer_profile.generate_customer_id(firstname, lastname)
+
+    customer_profile_details = customer_profile.get_customer_profile()
+
+    print(customer_profile_details)
+
+
 print("\nEmployee profiles\n")
-get_employee_details()
+# get_employee_details()
 
 print("\nPerson profile\n")
 # get_person_details()
+print("\nCustomer profiles\n")
 
-# print("\nPerson profiles\n")
+get_customer_details()
+
+
+
+
