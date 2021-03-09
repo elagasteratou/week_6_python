@@ -5,12 +5,12 @@ class Account:
 
     def deposit(self, amt):
         self._balance += amt
-        return
+        # return
 
 
     def withdraw(self, amt):
         self._balance -= amt
-        return
+        # return
 
 
     def getbalance(self):
