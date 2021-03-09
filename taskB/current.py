@@ -8,6 +8,6 @@ class Current(Account):
 
 
     # we need to clarify what we are showing here and the calculations
-    # def display_overdraft(self):
-    #     return self.__available_including_overdraftoverdraft = self + 1000
-
+    def display_overdraft(self):
+        self.__available_including_overdraft = super().getbalance() + 1000
+        return self.__available_including_overdraft
