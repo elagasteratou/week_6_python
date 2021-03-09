@@ -13,13 +13,13 @@ def get_employee_details():
     age = input("Please input your age:")
     # add function to validate age and ensure they are numbers
 
-    employee_profile = Employee("", "", "", "")
-
-    employee_profile.generate_employee_id(firstname, lastname)
-    employee_profile.inputfirstname(firstname)
-    employee_profile.inputlastname(lastname)
-    employee_profile.inputage(age)
-
+    # employee_profile = Employee("", "", "", "")
+    employee_profile = Employee(lastname, firstname, age)
+    # employee_profile.generate_employee_id(firstname, lastname)
+    # employee_profile.inputfirstname(firstname)
+    # employee_profile.inputlastname(lastname)
+    # employee_profile.inputage(age)
+    print(employee_profile)
     employee_profile_details = employee_profile.get_employee_profile()
 
     print(employee_profile_details)
